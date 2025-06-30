@@ -229,33 +229,33 @@
 sqlplus / as sysdba
 
 - 사용자 계정 생성
-CREATE USER '사용자명' IDENTIFIED BY '비밀번호';
+CREATE USER libra IDENTIFIED BY ksm0923;
 
 - 권한 부여
-GRANT CONNECT, RESOURCE TO '사용자명';
+GRANT CONNECT, RESOURCE TO libra;
 
 - 테이블스페이스 생성
-CREATE TABLESPACE '테이블스페이스명'
-DATAFILE 'D:\경로\파일명.dbf'
+CREATE TABLESPACE LIBRA_DB
+DATAFILE 'D:\workspace\project\KG_AI_Project/db\LIBRA_DB.dbf'
 SIZE 100M
 AUTOEXTEND ON
 NEXT 50M MAXSIZE UNLIMITED;
 
 - 새로 만든 사용자에게 새로 만든 테이블스페이스 할당
-ALTER USER '사용자명' DEFAULT TABLESPACE '테이블스페이스명';
-ALTER USER '사용자명' QUOTA UNLIMITED ON '테이블스페이스명';
+ALTER USER libra DEFAULT TABLESPACE LIBRA_DB;
+ALTER USER libra QUOTA UNLIMITED ON LIBRA_DB;
 
 ```
 
 내 사용자 계정
-UNIV_LIB_STATS
+libra
 ksm0923
 
 테이블스페이스 명
-UNIV_LIB_DB_TBS
+LIBRA_DB
 
 테이블스페이스 파일 경로
-D:\workspace\project\KG_AI_Project/db\UNIV_LIB_DB.dbf
+D:\workspace\project\KG_AI_Project/db\LIBRA_DB.dbf
 
 
 

@@ -130,3 +130,12 @@ er diagram 등등
 ### 또또
 
 https://github.com/Team-baebae
+
+7/9 수욜에 머신러닝 결과보고서 양식 보여줄꺼임~
+
+id & pw만 가지고는 약함! 구글 또는 네이버 아이디로 로그인 같은 기능 찾아보기 - spring sequrity
+
+chart.js 찾아보기 아작스-제이쿼리, 에크마식스-프라미스?? 등등을 써서 붙일꺼니 찾아봐야댐
+
+
+

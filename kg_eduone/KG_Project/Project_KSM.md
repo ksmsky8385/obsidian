@@ -374,8 +374,8 @@ Model_Libra/
 │   ├── __init__.py  
 │   ├── __main__.py <- EstimationFlow 패키지 실행  
 │   ├── ModelLoader.py <- 머신러닝 모델 로딩 클래스  
-│   ├── SCRTableBuilder.py <- 예측된 미래점수 테이블 생성 클래스  
-│   └── SCRTableUpdater.py <- 미래점수값을 이용한 추이 데이터 추가 업데이트 클래스  
+│   ├── SCRTableBuilder.py <- 최신연도 기준 1년 후의 예측점수 테이블 생성 클래스  
+│   └── SCRTableUpdater.py <- n년 후 점수 예측을 위한 반복 예측 업데이트 클래스  
 │  
 ├── ML_RFR/ <- 렌덤포레스트 회귀 머신러닝 모델 패키지  
 │   ├── models/  
@@ -419,6 +419,33 @@ Model_Libra/
 ├── environment.yml <- " conda env create -f environment.yml " 아나콘다 가상환경 세팅  
 ├── README.md <- 설명글  
 └── requirements.txt <- " pip install -r requirements.txt " 필요 라이브러리 설치  
+
+## 웹UI 파일구성
+
+web/  
+│  
+├── css/
+│   ├──  
+│   ├── 
+│   └──
+│  
+├── html/
+│   ├──  
+│   ├── 
+│   └──
+│  
+├── images/
+│   ├──  
+│   ├── 
+│   └──
+│  
+├── js/
+│   ├──  
+│   ├── 
+│   └──
+│  
+
+
 
 ## 딥러닝 단계 - 학과 분류
 
